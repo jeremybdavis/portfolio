@@ -103,7 +103,7 @@ a:after {
 
 #headerwrap h1 {
   font-weight: 300;
-  font-size: 70px;
+  font-size: 60px;
   color: #ab6c60;
   background-color: rgba(230, 233, 237, 0.8);
 }
@@ -409,4 +409,14 @@ a:after {
   background-color: #becdd4;
   border: 2px outset #fff;
 
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #headerwrap h1 {
+    font-size: 70px;
+  }
 }
