@@ -106,6 +106,7 @@ a:after {
   font-size: 50px;
   color: #ab6c60;
   background-color: rgba(230, 233, 237, 0.8);
+  padding: 15px;
 }
 
 #foliowrap {
@@ -418,5 +419,6 @@ a:after {
 @media (min-width: 992px) {
   #headerwrap h1 {
     font-size: 70px;
+    padding: 0;
   }
 }
