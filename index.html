@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <title>Jeremy Davis Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
+
+
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+
+
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#gn-menu">
+  	<!-- ========== MAIN MENU ========== -->
+	<div class="container">
+		<ul id="gn-menu" class="gn-menu-main">
+			<li class="gn-trigger">
+				<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
+				<nav class="gn-menu-wrapper">
+					<div class="gn-scroller">
+						<ul class="gn-menu">
+							<li><a href="#home" class="gn-icon gn-icon-home smoothScroll">Home</a></li>
+							<li><a href="#about" class="gn-icon gn-icon-archive smoothScroll">About</a></li>
+							<li><a href="#portfolio" class="gn-icon gn-icon-pictures smoothScroll">Portfolio</a></li>
+							<li><a href="#blog" class="gn-icon gn-icon-article smoothScroll">Blog</a></li>
+							<li><a href="#contact" class="gn-icon gn-icon-envelop smoothScroll">Contact</a></li>
+						</ul>
+					</div><!-- /gn-scroller -->
+				</nav>
+			</li>
+			<li><a href="#home" class="smoothScroll">Back to Top</a></li>
+		</ul>
+	</div><!-- /container -->
+
+
+	<!-- ========== HEADER SECTION ========== -->
+	<section id="home" name="home"></section>
+	<div id="headerwrap">
+		<div class="container">
+			<div class="col-lg-7">
+			<h1>Front End Developer in Nashville, TN</h1>
+			</div>
+			<div class="col-lg-4">
+			</div>
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+
+
+	<!-- ABOUT SECTION -->
+	<section id="about" name="about"></section>
+	<div class="container about">
+		<div class="col-lg-6 col-lg-offset-3">
+			<h3>About Jeremy Davis</h3>
+			<h5>FRONT-END DEVELOPER</h5>
+			<hr>
+			<br>
+      <img src="assets/img/about-me.jpg" class="img-responsive" alt="" />
+			<h4>Hi, I'm Jeremy. I'm a front-end developer. I love to find creative solutions to solve problems and help others. People, travel, creativity, and good stories tend to light me up. Nashville, TN is home.<br/>-</h4>
+			<p>In the summer of 2015, I attended an accelerated coding program called The Iron Yard. While there I began to learn how to truly think like a programmer. I began to embrace the idea of signing up for a lifelong pursuit of learning. I learned and got my hands dirty with HTML, CSS, and lots and lots of Javascript. My time there confirmed every day that this is what I want to be doing for a living. You can see some of the work I completed while there in my portfolio below.</p>
+      <p>In my spare time, you can typically find me getting things done at my favorite coffee shop, yelling at the TV while watching sports, or catching one of the many shows Nashville has to offer.</p>
+      <p>I'm currently in search of opportunities to continue my journey as a developer. I'm ready and eager for a position to learn and apply myself to a team. If there is any way I can help you, or you would like to know more, feel free to <a href="#contact">contact me</a> anytime.</p>
+		</div><!-- /col-lg-6 -->
+	</div><!-- /container -->
+
+
+	<!-- BEGIN CHART SECTION -->
+	<div id="chartwrap">
+	<br>
+	<br>
+		<div class="container centered">
+			<div class="col-lg-3"></div>
+
+				<!-- FIRST CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas" height="130" width="130"></canvas>
+					<label>HTML / CSS</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 60,
+									color:"#ab6c60"
+								},
+								{
+									value : 40,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+
+
+				<!-- SECOND CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas1" height="130" width="130"></canvas>
+					<label>Google Searching</label>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 90,
+									color:"#3b4042"
+								},
+								{
+									value : 10,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+
+
+				<!-- THIRD CHART -->
+				<div class="col-lg-2">
+					<canvas id="canvas2" height="130" width="130"></canvas>
+					<label>Javascript</label>
+					<script>
+						var doughnutData = [
+								{
+									value: 45,
+									color:"#6e8b94"
+								},
+								{
+									value : 55,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<br>
+					<br>
+				</div><!-- col-lg-2 -->
+
+			<div class="col-lg-3"></div>
+		</div><!-- container -->
+	</div><!-- chartwrap -->
+
+	<section id="portfolio" name="portfolio"></section>
+	<div id="foliowrap">
+		<div class="container">
+			<h3>Recent Work</h3>
+			<br>
+			<br>
+			<div class="row">
+
+				<!-- PORTFOLIO IMAGE 1 -->
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/surf.png" alt="">
+							<figcaption>
+								<h5>SURF & PADDLE</h5>
+								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+
+						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. -->
+
+						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Surf & Paddle Co.</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="assets/img/portfolio/surf.png" alt=""></p>
+						          <p>My first project at The Iron Yard. We were given a PDF mockup of this site and then set out to recreate it as closely as possible using pure HTML and CSS. I have since gone back and made it fully responsive.</p>
+						          <p><b><a href="http://jeremybdavis.github.io/surf_paddle/">Visit Site</a></b></p>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+
+
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/etsy.png" alt="">
+							<figcaption>
+								<h5>ETSY PROJECT</h5>
+								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+        <!-- MODAL 2 -->
+
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Etsy API Project</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/img/portfolio/etsy.png" alt=""></p>
+                <p>This project was our first big test at pulling information from an API to populate our page. This was also my first attempt at using the Bourbon Neat library.</p>
+                <p><b><a href="http://jeremybdavis.github.io/Assignment11.1/">Visit Site</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 3 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/repo.png" alt="">
+							<figcaption>
+								<h5>GITHUB REPO COPY</h5>
+								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+			</div><!-- /row -->
+
+      <!-- MODAL 3 -->
+
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Github Repo Copy</h4>
+            </div>
+            <div class="modal-body">
+              <p><img class="img-responsive" src="assets/img/portfolio/repo.png" alt=""></p>
+              <p>Our first attempt at communicating with an API to populate our page's content. Used Github's API to recreate our own repo pages.</p>
+              <p><b><a href="#">Visit Site</a></b></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 4 -->
+			<div class="row">
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/space.jpg" alt="">
+							<figcaption>
+								<h5>SPACE INVADERS</h5>
+								<a data-toggle="modal" href="#myModal4" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+        <!-- MODAL 4 -->
+
+        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Space Invaders Demo</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/img/portfolio/space.jpg" alt=""></p>
+                <p>A fun project coding along to <a href="https://vimeo.com/105955605">this video</a>. </p>
+                <p><b><a href="http://jeremybdavis.github.io/Space-Invaders-Demo/">Visit Site</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 5 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/todo.jpg" alt="">
+							<figcaption>
+								<h5>FLUX REACT TODOS</h5>
+								<a data-toggle="modal" href="#myModal5" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+			    	<br>
+				</div><!-- /col -->
+
+        <!-- MODAL 5 -->
+
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Flux React Todo App</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/img/portfolio/todo.jpg" alt=""></p>
+                <p>Built the TodoMVC app using <a href="https://facebook.github.io/flux/docs/todo-list.html#content">Flux Tutorials</a> and <a href="http://todomvc.com/">TodoMVC Source Code</a></p>
+                <p><b><a href="http://jeremybdavis.github.io/flux-todos-tutorial/">Visit Site</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 6 -->
+				<div class="col-md-4">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="assets/img/portfolio/mysite.jpg" alt="">
+							<figcaption>
+								<h5>SQUARESPACE</h5>
+								<a data-toggle="modal" href="#myModal6" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->
+				<br>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /foliowrap -->
+
+  <!-- MODAL 6 -->
+
+  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Squarespace</h4>
+        </div>
+        <div class="modal-body">
+          <p><img class="img-responsive" src="assets/img/portfolio/mysite.jpg" alt=""></p>
+          <p>Before diving fully into development, I used Squarespace to design and layout sites for my clients. This is the personal site that I use.</p>
+          <p><b><a href="http://www.jeremydavis.co">Visit Site</a></b></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+	<section id="blog" name="blog"></section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-6 about">
+				<h3>Sometimes I Blog</h3>
+				<h5>THOUGHTS ON LIFE AND TECHNOLOGY</h5>
+				<br>
+				<br>
+
+				<!-- ACCORDION -->
+		            <div class="accordion" id="accordion2">
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+		                        <date>Aug 4, 2015</date> <plus> + </plus> Half Way There
+		                        </a>
+		                    </div><!-- /accordion-heading -->
+		                    <div id="collapseOne" class="accordion-body collapse in">
+		                    	<br>
+		                        <div class="accordion-inner">
+		                        <h4> Week six of The Iron Yard has officially begun. It’s hard to believe I’m nearly halfway done, as everything still feels so new. And yet, almost every day I look back feeling slightly further ahead than where I was the day prior. The concepts that haunted me only two weeks ago seem relatively familiar now, which gives me confidence the same will be true with today’s stress inducers (aka: backbone). </h4>
+		                        <p>Time is flying. I have a LONG way to go, but each day my confidence grows that this is the industry I want to get into. I really do enjoy learning this stuff, and I easily get lost for hours in it. A couple years ago as I was wrapping up my final semester of college and thinking about the job hunt, I remember hearing that I should “find my flow.” Basically, find something that causes you to lose track of time because you’re so engrossed with it, and see if you can tie that into what you do for a living. I think I finally found it, and that’s a great reminder that I’m doing the right thing.</p>
+								            <p>I think the best description I’ve come up with for my experience thus far at The Iron Yard is that it‘s self teaching with life support. If you come here expecting to be spoon fed all the knowledge you need, I think you’ll be severely disappointed (and jobless.) I feel like each morning during lecture I have to hang on for dear life as I “drink from the fire hydrant,” and then I’m placed in a boxing ring for the rest of the afternoon. In this imaginary ring, I’m able to take what I’ve grasped from earlier in the day and apply it, practice, and make mistakes with it, knowing that I’ll always have those ropes (my instructor and classmates) to catch me before I fall off the ledge.</p>
+								            <p>The first half of this experience has taught me to never stop searching for answers, to always have something on the side that I’m doing just for fun, and to not miss out on celebrating the small victories as I search for the major ones. I look forward to seeing what the second half of this experience has in store. I think it’s going to lead to something special.</p>
+								            <p><img class="img-circle" src="assets/img/profile.jpg" height="50px" width="50px"> - <i>Jeremy Davis.</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+
+		                <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+		                        <date>Jul 9, 2015</date> <plus> + </plus>  I'm Drowning In Code and Loving It
+		                        </a>
+		                    </div>
+		                    <div id="collapseTwo" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+                              <h4>Not too long ago, I was handed a check for the fairly simple act of building a Squarespace site for a small business client. And then I got hired to do it again, which got me thinking: what if I could build these things from scratch?  So around that time in early 2015 I made a decision to get serious about teaching myself web design and development.</h4>
+								              <p>Despite <a href="#">great resources</a>, I wasn't advancing at the rate I desired. I lacked accountability when I took days (or weeks) off from learning. I lacked feedback on my work. And most importantly, I lacked a community of people that would help make me better.</p>
+                              <p>Enter <a href=#>The Iron Yard</a>. I searched for every possible reason to not do it, but couldn't find a good enough reason that didn't stink of fear. So I interviewed, I got accepted, and I made the jump.</p>
+                              <p>Nearly two weeks in and I'm closer on my journey of doing work I love than I was after 6 months of self teaching. I've been overwhelmed with HTML and CSS concepts, but through that I've now built my first web page from scratch. I know I'll look back in a few months and laugh at how bad it is, but making terrible stuff is part of the journey towards making something awesome.</p>
+                              <p>Each day, I get to learn and then immediately apply those concepts to real life projects. I get to solve problems daily. I get immediate access to help when I feel like I'm drowning, and even more rewarding, I get to turn around once something has clicked and offer help to someone struggling with that same problem.</p>
+                              <p>Learning to code is not easy. This experience has already been filled with many peaks and valleys. But at the end of the day, I get to build awesome stuff and have a blast doing it. I'm excited to get up each morning and I go to bed with a sense of accomplishment. Life is too short to not enjoy what you do. <a href="#">The majority of U.S. workers don't feel engaged with their work</a>. I'm determined to not be an addition to that statistic.</p>
+                              <p>On to week three (Hellooo Javascript).</p>
+                              <p><img class="img-circle" src="assets/img/profile.jpg" height="50px" width="50px"> - <i>Jeremy Davis.</i></p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+
+		                 <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+		                        <date>Oct 11, 2014</date> <plus> + </plus>  Totaled
+		                        </a>
+		                    </div>
+		                    <div id="collapseThree" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>A week after being rear ended and receiving some major body damage, my car broke down tonight at a not so nice intersection (but thankfully only two blocks from home.)</p>
+                <p>Within seconds a man named Andre, who was waiting at the bus stop, helped me push the car through the intersection into a gas station parking lot. No more than a minute after that a man named Thomas checked on me and then recruited two others to help push the car into a parking spot (Andre came running back to help with that too.) All the while I also had help on the phone from my parents, my roommate, and my girlfriend.</p>
+                <p>Tonight my car is staying the night at that gas station until I get it towed tomorrow morning. I've likely taken my last ride in my first car, but that last ride reminded me two things:</p>
+                <ol>
+                  <li>People are good. Even in the places you least expect that to be true (and maybe even more so.)</li>
+                  <li>Unselfish acts of service leave a major impact. Pay attention for opportunities to offer help without being asked. It won't go unnoticed.</li>
+                </ol>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+
+		                 <div class="accordion-group">
+		                    <div class="accordion-heading">
+		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
+		                        <date>Dec 29, 2013</date> <plus> + </plus>  Snowboarding Life Lessons
+		                        </a>
+		                    </div>
+		                    <div id="collapseFour" class="accordion-body collapse">
+		                        <div class="accordion-inner">
+								<p>I tried to pick up snowboarding again last week after a decade apart from it. I fell over. A lot.</p>
+                <p>But one of the coolest things about all that time on my back was the ability to sit up each time and have my breath taken away by the amazing scenery. Had I not been forced to the ground due to my lack of skills, I would have zipped on by without fully appreciating my surroundings.</p>
+                <p>I also realized each fall was making me better. Each mistake taught me something new that I could improve on. Out of the pain came new understanding.</p>
+                <p>Here’s a really simple, perspective altering truth I’m learning:</p>
+                <p>Every single time, right before we have the answer, we don’t have the answer. There is an entire season of not understanding that leads up to the point of understanding something.</p>
+                <p>We have to do battle with things that we cannot yet do, or that we don’t yetunderstand, before we can ever hope to achieve anything significant.</p>
+                <p>Confusion precedes learning. Failure precedes success.</p>
+                <p>Even when we’re feeling really low, when life has thrown us to the ground, maybe there is still something beautiful to see if we just sit up and look around. Maybe there is purpose in the pain. Maybe, no matter where we find ourselves, there are things to learn and people to serve.</p>
+                <p>And maybe the best is yet to come.</p>
+                <p>So here’s to a new year filled with new adventures, new accomplishments, and new battles with that which we cannot do or understand…yet.</p>
+								</div><!-- /accordion-inner -->
+		                    </div><!-- /collapse -->
+		                </div><!-- /accordion-group -->
+		                <br>
+					</div><!-- Accordion -->
+				</div><!-- /col-lg-6 -->
+
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+	<section id="contact" name="contact"></section>
+	<div id="footerwrap">
+		<div class="container">
+			<div class="col-lg-5">
+				<h3>Social</h3>
+				<p>
+          <a href="http://www.facebook.com/jeremy.davis" class="btn btn-social-icon btn-facebook">
+            <i class="fa fa-facebook fa-2x"></i>
+          </a>
+          <a href="http://www.twitter.com/jeremybdavis" class="btn btn-social-icon btn-twitter">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jdavis129" class="btn btn-social-icon btn-linkedin">
+            <i class="fa fa-linkedin fa-2x"></i>
+          </a>
+          <br/>
+          <a href="http://www.instagram.com/jeremybdavis" class="btn btn-social-icon btn-instagram">
+            <i class="fa fa-instagram fa-2x"></i>
+          </a>
+          <a href="http://www.github.com/jeremybdavis" class="btn btn-social-icon btn-github">
+            <i class="fa fa-github fa-2x"></i>
+          </a>
+          <a href="http://www.jeremydavis.co" class="btn btn-social-icon btn-globe">
+            <i class="fa fa-globe fa-2x"></i>
+          </a>
+				</p>
+			</div>
+
+			<div class="col-lg-7">
+				<h3>Contact Me</h3>
+				<br>
+				<form role="form" action="contact.php" method="post" enctype="plain">
+				  <div class="form-group">
+				    <label for="name1">Your Name</label>
+				    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
+				  </div>
+				  <div class="form-group">
+				    <label for="email1">Email address</label>
+				    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				  	<label>Your Text</label>
+				  	<textarea class="form-control" name="Message" rows="3"></textarea>
+				  </div>
+				  <br>
+				  <input type="submit" class="btn-large btn-theme"></input>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina.js"></script>
+	<script src="assets/js/classie.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/gnmenu.js"></script>
+	<script>
+		new gnMenu( document.getElementById( 'gn-menu' ) );
+	</script>
+
+  </body>
+</html>
