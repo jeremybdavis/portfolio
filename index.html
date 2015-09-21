@@ -122,16 +122,16 @@
 				<!-- SECOND CHART -->
 				<div class="col-lg-2">
 					<canvas id="canvas1" height="130" width="130"></canvas>
-					<label>Google Searching</label>
+					<label>Responsive Design</label>
 					<br>
 					<script>
 						var doughnutData = [
 								{
-									value: 90,
+									value: 80,
 									color:"#3b4042"
 								},
 								{
-									value : 10,
+									value : 20,
 									color : "#ecf0f1"
 								}
 							];
@@ -149,11 +149,11 @@
 					<script>
 						var doughnutData = [
 								{
-									value: 45,
+									value: 50,
 									color:"#6e8b94"
 								},
 								{
-									value : 55,
+									value : 50,
 									color : "#ecf0f1"
 								}
 							];
@@ -175,22 +175,58 @@
 			<br>
 			<div class="row">
 
-				<!-- PORTFOLIO IMAGE 1 -->
+        <!-- PORTFOLIO IMAGE 1 -->
+        <div class="col-md-4">
+            <div class="grid mask">
+            <figure>
+              <a href="http://jeremybdavis.github.io/final-project/"><img class="img-responsive" src="assets/img/portfolio/coffeeApp.png" alt=""></a>
+              <figcaption>
+                <h5>Coffee App</h5>
+                <a data-toggle="modal" href="#myModal5" class="btn btn-primary btn-lg">Take a Look</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+            </div><!-- /grid-mask -->
+            <br>
+        </div><!-- /col -->
+
+        <!-- MODAL 1 -->
+
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Coffee App</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/img/portfolio/coffeeApp.png" alt=""></p>
+                <p>For my final project at The Iron Yard, I built a website and web application devoted to helping make it easier for people to learn how to make craft coffee at home. The site provides resources to learn about different brewing methods, and a tutorial application to walk users through each step of the brewing process.</p>
+                <p><b><a href="http://jeremybdavis.github.io/final-project/">Visit Site</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 2 -->
 				<div class="col-md-4 ">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/surf.png" alt="">
+							<a href="http://jeremybdavis.github.io/surf_paddle/"><img class="img-responsive" src="assets/img/portfolio/surf.png" alt=""></a>
 							<figcaption>
 								<h5>SURF & PADDLE</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
+            <h7>TESTING</h7>
 			    	<br>
 				</div><!-- /col -->
 
 
-						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. -->
+						 <!-- MODAL 2 -->
 
 						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						    <div class="modal-dialog">
@@ -212,11 +248,11 @@
 						  </div><!-- /.modal -->
 
 
-				<!-- PORTFOLIO IMAGE 2 -->
+				<!-- PORTFOLIO IMAGE 3 -->
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/etsy.png" alt="">
+							<a href="http://jeremybdavis.github.io/Assignment11.1/"><img class="img-responsive" src="assets/img/portfolio/etsy.png" alt=""></a>
 							<figcaption>
 								<h5>ETSY PROJECT</h5>
 								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
@@ -226,7 +262,7 @@
 			    	<br>
 				</div><!-- /col -->
 
-        <!-- MODAL 2 -->
+        <!-- MODAL 3 -->
 
         <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -246,12 +282,14 @@
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
+      </div><!-- /row -->
 
-				<!-- PORTFOLIO IMAGE 3 -->
+				<!-- PORTFOLIO IMAGE 4 -->
+      <div class="row">
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/repo.png" alt="">
+							<a href="http://jeremybdavis.github.io/ajax_assignment08/"><img class="img-responsive" src="assets/img/portfolio/repo.png" alt=""></a>
 							<figcaption>
 								<h5>GITHUB REPO COPY</h5>
 								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">Take a Look</a>
@@ -260,9 +298,9 @@
 			    	</div><!-- /grid-mask -->
 			    	<br>
 				</div><!-- /col -->
-			</div><!-- /row -->
 
-      <!-- MODAL 3 -->
+
+      <!-- MODAL 4 -->
 
       <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -274,7 +312,7 @@
             <div class="modal-body">
               <p><img class="img-responsive" src="assets/img/portfolio/repo.png" alt=""></p>
               <p>Our first attempt at communicating with an API to populate our page's content. Used Github's API to recreate our own repo pages.</p>
-              <p><b><a href="#">Visit Site</a></b></p>
+              <p><b><a href="http://jeremybdavis.github.io/Assignment11.1/">Visit Site</a></b></p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -283,12 +321,11 @@
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
 
-				<!-- PORTFOLIO IMAGE 4 -->
-			<div class="row">
+				<!-- PORTFOLIO IMAGE 5 -->
 				<div class="col-md-4 ">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/space.jpg" alt="">
+							<a href="http://jeremybdavis.github.io/Space-Invaders-Demo/"><img class="img-responsive" src="assets/img/portfolio/space.jpg" alt=""></a>
 							<figcaption>
 								<h5>SPACE INVADERS</h5>
 								<a data-toggle="modal" href="#myModal4" class="btn btn-primary btn-lg">Take a Look</a>
@@ -298,7 +335,7 @@
 			    	<br>
 				</div><!-- /col -->
 
-        <!-- MODAL 4 -->
+        <!-- MODAL 5 -->
 
         <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -319,46 +356,11 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/todo.jpg" alt="">
-							<figcaption>
-								<h5>FLUX REACT TODOS</h5>
-								<a data-toggle="modal" href="#myModal5" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-			    	<br>
-				</div><!-- /col -->
-
-        <!-- MODAL 5 -->
-
-        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Flux React Todo App</h4>
-              </div>
-              <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/portfolio/todo.jpg" alt=""></p>
-                <p>Built the TodoMVC app using <a href="https://facebook.github.io/flux/docs/todo-list.html#content">Flux Tutorials</a> and <a href="http://todomvc.com/">TodoMVC Source Code</a></p>
-                <p><b><a href="http://jeremybdavis.github.io/flux-todos-tutorial/">Visit Site</a></b></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
 				<!-- PORTFOLIO IMAGE 6 -->
 				<div class="col-md-4">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="assets/img/portfolio/mysite.jpg" alt="">
+							<a href="http://www.jeremydavis.co"><img class="img-responsive" src="assets/img/portfolio/mysite.jpg" alt=""></a>
 							<figcaption>
 								<h5>SQUARESPACE</h5>
 								<a data-toggle="modal" href="#myModal6" class="btn btn-primary btn-lg">Take a Look</a>
