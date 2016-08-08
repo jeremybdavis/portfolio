@@ -1,0 +1,13 @@
+@import 'variables';
+
+.gn-menu-main {
+  a {
+    transition: .3s all ease-in-out;
+  }
+}
+
+@media (min-width: 992px) {
+  .smoothScroll:hover {
+    background-color: $blue;
+  }
+}

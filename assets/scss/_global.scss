@@ -1,0 +1,54 @@
+@import 'header';
+@import 'variables';
+
+body {
+  @include lato-light;
+  @include vendor-prefix(font-smoothing, antialiased);
+  @include vendor-prefix(overflow-scrolling, touch);
+  background-color: $gray-light;
+  color: $gray-darker;
+  font-size: 16px;
+}
+
+a,
+a::before,
+a::after {
+  @include vendor-prefix(transition, (color .1s ease-in, background .1s ease-in));
+  color: $red;
+  word-wrap: break-word;
+}
+
+a:focus,
+a:hover {
+  color: $blue;
+  outline: 0 !important;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include raleway-light;
+  margin: 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $gray;
+  display: block;
+  height: 1px;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}

@@ -1,0 +1,77 @@
+// colors
+$blue: #6e8b94;
+$gray-light: #f2f2f2;
+$gray: #ccc;
+$gray-dark: #555;
+$gray-darker: #333;
+$gray-darkest: #3b4042;
+$red: #ab6c60;
+$white: #fff;
+
+// borders
+@mixin white-border($opacity) {
+  border-color: rgba(255, 255, 255, $opacity);
+}
+
+// fonts
+@mixin lato-light {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin lato-book {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin lato-black {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin raleway-light {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin raleway-book {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin raleway-black {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+// overlays
+@mixin blue-overlay($opacity) {
+  background-color: rgba(110, 139, 148, $opacity);
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+// Vendor Prefix
+@mixin vendor-prefix($name, $value...) {
+  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+    #{$vendor}#{$name}: #{$value};
+  }
+}
+
+// vertical center
+@mixin vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}

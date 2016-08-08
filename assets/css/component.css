@@ -18,25 +18,25 @@
 
 .gn-menu-main,
 .gn-menu-main ul {
-		margin: 0;
-		padding: 0;
-		background: #becdd4;
-		color: #ffffff;
-		list-style: none;
-		text-transform: none;
-		font-weight: 300;
-		font-family: 'Lato', Arial, sans-serif;
-		line-height: 60px;
+	background: #3b4042;
+	color: #ffffff;
+	font-weight: 300;
+	font-family: 'Lato', Arial, sans-serif;
+	line-height: 60px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-transform: none;
 }
 
 .gn-menu-main {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 60px;
-		font-size: 13px;
-		z-index: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	font-size: 13px;
+	z-index: 1;
 }
 
 .gn-menu-main a {
@@ -50,7 +50,6 @@
 .no-touch .gn-menu-main a:hover,
 .no-touch .gn-menu li.gn-search-item:hover,
 .no-touch .gn-menu li.gn-search-item:hover a {
-		background: #6e8b94;
 		color: white;
 }
 
@@ -58,7 +57,6 @@
 		display: block;
 		float: left;
 		height: 100%;
-		border-right: 1px solid #6e8b94;
 		text-align: center;
 }
 
@@ -82,10 +80,11 @@
 }
 
 .gn-menu-main > li > a {
-		padding: 0 30px;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: bold;
+	font-weight: bold;
+	letter-spacing: 1px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	transition: .3s all ease-in-out;
 }
 
 .gn-menu-main:after {
@@ -338,24 +337,24 @@ input.gn-search:focus {
 }
 
 .gn-icon-menu::before {
-		margin-left: -15px;
-		vertical-align: -2px;
-		width: 30px;
-		height: 3px;
-		background: white;
-		box-shadow: 0 3px #becdd4, 0 -6px white, 0 -9px #becdd4, 0 -12px white;
-		content: '';
+	background: white;
+	box-shadow: 0 3px #3b4042, 0 -6px white, 0 -9px #3b4042, 0 -12px white;
+	content: '';
+	height: 3px;
+	margin-left: -15px;
+	transition: .3s all ease-in-out;
+	vertical-align: -2px;
+	width: 30px;
 }
 
 .no-touch .gn-icon-menu:hover::before,
 .no-touch .gn-icon-menu.gn-selected:hover::before {
-		background: white;
-		box-shadow: 0 3px #6e8b94, 0 -6px white, 0 -9px #6e8b94, 0 -12px white;
+		background: #6e8b94;
+		box-shadow: 0 3px #3b4042, 0 -6px #6e8b94, 0 -9px #3b4042, 0 -12px #6e8b94;
 }
 
 .gn-icon-menu.gn-selected::before {
 		background: white;
-		box-shadow: 0 3px #becdd4, 0 -6px white, 0 -9px #becdd4, 0 -12px white;
 }
 
 /* styles for opening menu */
