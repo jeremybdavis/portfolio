@@ -60,6 +60,7 @@
 
 #headerwrap::before {
   @include blue-overlay(.8);
+  height: 100vh;
 }
 
 .hero-content {
