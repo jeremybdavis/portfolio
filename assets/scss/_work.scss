@@ -28,13 +28,17 @@
     position: absolute;
 
     a {
+      @include lato-black;
       background: $red;
+      border: 0;
+      border-radius: 0;
       color: $white;
       display: inline-block;
-      font-size: 13px;
+      font-size: 14px;
       margin-left: 20px;
-      padding: 5px 10px;
+      padding: 6px 12px;
       text-align: left;
+      text-transform: uppercase;
     }
 
     h5 {
@@ -46,6 +50,7 @@
       padding-left: 20px;
       padding-top: 0;
       text-align: left;
+      text-transform: uppercase;
     }
   }
 }

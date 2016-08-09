@@ -77,6 +77,8 @@
   margin-top: 50px;
   padding-bottom: 60px;
   padding-top: 40px; }
+  #footerwrap a {
+    transition: .3s all ease-in-out; }
   #footerwrap h3 {
     font-size: 28px; }
   #footerwrap p {
@@ -98,6 +100,7 @@
       color: #fff;
       cursor: pointer; }
   #footerwrap .form-control {
+    border-radius: 0;
     font-size: 16px;
     padding: 20px; }
   #footerwrap .form-group label {
@@ -275,13 +278,37 @@ p {
   padding: 0 20px;
   width: 100%; }
 
+.modal-body a {
+  font-size: 18px; }
+.modal-body img {
+  width: 100%; }
+.modal-body p {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
 .modal-header {
   background-color: #6e8b94;
   color: #fff; }
+  .modal-header .close {
+    color: #fff;
+    font-size: 40px;
+    margin-top: -10px;
+    opacity: 1;
+    transition: .3s all ease-in-out; }
+    .modal-header .close:hover {
+      opacity: .6; }
 
 .modal-title {
-  color: #fff; }
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase; }
 
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 80%; } }
 #foliowrap {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -311,13 +338,19 @@ p {
   padding: 20px;
   position: absolute; }
   .grid figcaption a {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     background: #ab6c60;
+    border: 0;
+    border-radius: 0;
     color: #fff;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 20px;
-    padding: 5px 10px;
-    text-align: left; }
+    padding: 6px 12px;
+    text-align: left;
+    text-transform: uppercase; }
   .grid figcaption h5 {
     color: #fff;
     font-weight: 700;
@@ -326,7 +359,8 @@ p {
     padding-bottom: 5px;
     padding-left: 20px;
     padding-top: 0;
-    text-align: left; }
+    text-align: left;
+    text-transform: uppercase; }
 
 .mask figcaption {
   -webkit-transform: translateY(0);

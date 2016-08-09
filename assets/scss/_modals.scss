@@ -1,10 +1,44 @@
 @import 'variables';
 
+.modal-body {
+  a {
+    font-size: 18px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    @include lato-book;
+  }
+}
+
 .modal-header {
   background-color: $blue;
   color: $white;
+
+  .close {
+    color: $white;
+    font-size: 40px;
+    margin-top: -10px;
+    opacity: 1;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
 }
 
 .modal-title {
+  @include raleway-black;
   color: $white;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 80%;
+  }
 }

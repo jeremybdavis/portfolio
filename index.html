@@ -19,11 +19,13 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/component.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
 
 
-    <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/Chart.js"></script>
 	<script src="assets/js/modernizr.custom.js"></script>
+  <script src="bower_components/wow/dist/wow.min.js"></script>
 
 
 
@@ -63,7 +65,7 @@
 	<!-- ========== HEADER SECTION ========== -->
 	<section id="home" name="home"></section>
 	<div id="headerwrap">
-		<div class="hero-content">
+		<div class="hero-content wow fadeIn">
   		<h1>Jeremy Davis</h1>
       <h2>Web Developer | Nashville, TN</h2>
 		</div>
@@ -90,10 +92,10 @@
 	<br>
 	<br>
 		<div class="container centered">
-			<div class="col-lg-3"></div>
+      <div class="col-lg-3"></div>
 
 				<!-- FIRST CHART -->
-				<div class="col-lg-2">
+				<div class="col-lg-2 wow fadeIn">
 					<canvas id="canvas" height="130" width="130"></canvas>
 					<label>HTML / CSS</label>
 					<br>
@@ -116,7 +118,7 @@
 
 
 				<!-- SECOND CHART -->
-				<div class="col-lg-2">
+				<div class="col-lg-2 wow fadeIn" data-wow-delay="1s">
 					<canvas id="canvas1" height="130" width="130"></canvas>
 					<label>Responsive Design</label>
 					<br>
@@ -139,7 +141,7 @@
 
 
 				<!-- THIRD CHART -->
-				<div class="col-lg-2">
+				<div class="col-lg-2 wow fadeIn" data-wow-delay="2s">
 					<canvas id="canvas2" height="130" width="130"></canvas>
 					<label>Javascript</label>
 					<script>
@@ -172,7 +174,7 @@
 			<div class="row">
 
         <!-- PORTFOLIO IMAGE 1 -->
-        <div class="col-md-6">
+        <div class="col-md-6 wow slideInLeft">
           <div class="grid mask">
             <figure>
               <a href="http://makebelieve.com" title="Make Believe Website">
@@ -194,22 +196,19 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Armed Mind</h4>
+                <h4 class="modal-title">Armed Mind (w/ Louder Agency)</h4>
               </div>
               <div class="modal-body">
                 <p><img class="img-responsive" src="assets/img/portfolio/armedmind.png" alt=""></p>
                 <p>My most recent project I worked on with Louder Agency. Armed Mind is a creative agency that partnered with Louder to revamp their website and case studies. This project gave me an opportunity to experiment with some fun "bells and whistles" such as animations, video, and some fun plugins.</p>
                 <p><b><a href="http://makebelieve.com">Visit Site</a></b></p>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
 				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-6">
+				<div class="col-md-6 wow slideInRight" data-wow-delay=".3s">
 		    	<div class="grid mask">
   					<figure>
   						<a href="http://insurancespecialtygroup.com" title="ISG Website">
@@ -233,15 +232,12 @@
 			      <div class="modal-content">
 			        <div class="modal-header">
 			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			          <h4 class="modal-title">Insurance Specialty Group</h4>
+			          <h4 class="modal-title">Insurance Specialty Group (w/ Louder Agency)</h4>
 			        </div>
 			        <div class="modal-body">
 			          <p><img class="img-responsive" src="assets/img/portfolio/isg.png" alt="ISG Website"></p>
 			          <p>My first custom dev website with Louder Agency. I was provided prototypes for the site that I then helped build into a website our client could show off proudly. This was also my first wordpress development experience.</p>
 			          <p><b><a href="http://insurancespecialtygroup.com">Visit Site</a></b></p>
-			        </div>
-			        <div class="modal-footer">
-			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			        </div>
 			      </div><!-- /.modal-content -->
 			    </div><!-- /.modal-dialog -->
@@ -251,7 +247,7 @@
 
 				<!-- PORTFOLIO IMAGE 3 -->
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 wow slideInLeft" data-wow-delay=".6s">
             <div class="grid mask">
             <figure>
               <a href="http://jeremybdavis.github.io/final-project/"><img class="img-responsive" src="assets/img/portfolio/coffeeApp.png" alt=""></a>
@@ -278,16 +274,13 @@
                 <p>For my final project at The Iron Yard, I built a website and web application devoted to helping make it easier for people to learn how to make craft coffee at home. The site provides resources to learn about different brewing methods, and a tutorial application to walk users through each step of the brewing process.</p>
                 <p><b><a href="http://jeremybdavis.github.io/final-project/">Visit Site</a></b></p>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
             </div><!-- /.modal-content -->
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
 
 				<!-- PORTFOLIO IMAGE 4 -->
-        <div class="col-md-6">
+        <div class="col-md-6 wow slideInRight" data-wow-delay=".9s">
 			    	<div class="grid mask">
 						<figure>
 							<a href="http://jeremybdavis.github.io/surf_paddle/"><img class="img-responsive" src="assets/img/portfolio/surf.png" alt=""></a>
@@ -316,9 +309,6 @@
               <p>My first project at The Iron Yard. We were given a PDF mockup of this site and then set out to recreate it as closely as possible using pure HTML and CSS. I have since gone back and made it fully responsive.</p>
               <p><b><a href="http://jeremybdavis.github.io/surf_paddle/">Visit Site</a></b></p>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
@@ -327,27 +317,6 @@
 
 		</div><!-- /container -->
 	</div><!-- /foliowrap -->
-
-  <!-- MODAL 6 -->
-
-  <div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Squarespace</h4>
-        </div>
-        <div class="modal-body">
-          <p><img class="img-responsive" src="assets/img/portfolio/mysite.jpg" alt=""></p>
-          <p>Before diving fully into development, I used Squarespace to design and layout sites for my clients. This is the personal site that I use.</p>
-          <p><b><a href="http://www.jeremydavis.co">Visit Site</a></b></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 
 
 	<section id="blog" name="blog"></section>
@@ -473,9 +442,6 @@
           <a href="http://www.github.com/jeremybdavis" class="btn btn-social-icon btn-github">
             <i class="fa fa-github fa-2x"></i>
           </a>
-          <a href="http://www.jeremydavis.co" class="btn btn-social-icon btn-globe">
-            <i class="fa fa-globe fa-2x"></i>
-          </a>
 				</p>
 			</div>
 
@@ -515,6 +481,7 @@
 	<script src="assets/js/gnmenu.js"></script>
 	<script>
 		new gnMenu( document.getElementById( 'gn-menu' ) );
+    new WOW().init();
 	</script>
 
   </body>
