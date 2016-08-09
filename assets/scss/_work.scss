@@ -1,0 +1,90 @@
+#foliowrap {
+  @include vendor-prefix(background-size, cover);
+  background-position: 50% 50%;
+  margin-top: 30px;
+  min-height: 800px;
+  padding-top: 50px;
+  text-align: center;
+
+  h3 {
+    @include lato-book;
+    color: $white;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+.grid {
+  figure {
+    margin: 0;
+    position: relative;
+  }
+
+  figcaption {
+    background: $blue;
+    color: $white;
+    left: 0;
+    padding: 20px;
+    position: absolute;
+
+    a {
+      background: $red;
+      color: $white;
+      display: inline-block;
+      font-size: 13px;
+      margin-left: 20px;
+      padding: 5px 10px;
+      text-align: left;
+    }
+
+    h5 {
+      color: $white;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin: 0;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-top: 0;
+      text-align: left;
+    }
+  }
+}
+
+.mask {
+  figcaption {
+    @include vendor-prefix(transform, (translateY(100%)));
+    @include vendor-prefix(transition, (transform .4s, opacity .1s .3s));
+    bottom: 0;
+    height: 50px;
+    opacity: 0;
+    top: auto;
+    width: 100%;
+
+    a {
+      bottom: 10px;
+      position: absolute;
+      right: 30px;
+      top: 10px;
+    }
+  }
+
+  figure {
+    overflow: hidden;
+
+    img {
+      @include vendor-prefix(transition, (transform .4s));
+    }
+  }
+
+  figure:hover {
+    figcaption {
+      @include vendor-prefix(transform, (translateY(0)));
+      @include vendor-prefix(transition, (transform .4s, opacity .1s));
+      opacity: 1;
+    }
+
+    img {
+      @include vendor-prefix(transform, (translateY(-30px)));
+    }
+  }
+}

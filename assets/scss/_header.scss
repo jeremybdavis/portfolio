@@ -1,9 +1,40 @@
 @import 'variables';
 
 .gn-menu-main {
+  font-size: 13px;
+  height: 60px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
   a {
+    color: $white;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    text-decoration: none;
     transition: .3s all ease-in-out;
   }
+
+  > li {
+    display: block;
+    float: left;
+    height: 100%;
+    text-align: center;
+  }
+}
+
+.gn-menu-main,
+.gn-menu-main ul {
+  background: $gray-darkest;
+  color: $white;
+  line-height: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
 }
 
 @media (min-width: 992px) {

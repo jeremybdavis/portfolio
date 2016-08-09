@@ -1,0 +1,47 @@
+@import 'variables';
+
+#footerwrap {
+  background-color: $gray-darkest;
+  color: $white;
+  margin-top: 50px;
+  padding-bottom: 60px;
+  padding-top: 40px;
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .btn-theme {
+    @include lato-black;
+    background-color: $red;
+    border: 0;
+    color: $white;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+      background-color: darken($red, 10%);
+      color: $white;
+      cursor: pointer;
+    }
+  }
+
+  .form-control {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  .form-group {
+    label {
+      @include raleway-light;
+      font-size: 16px;
+    }
+  }
+}

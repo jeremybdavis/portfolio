@@ -1,0 +1,52 @@
+@import 'variables';
+
+.accordion-heading {
+  border-bottom: 1px solid $gray;
+  margin-top: 30px;
+  padding-bottom: 10px;
+  text-align: left;
+
+  a {
+    @include raleway-light;
+    color: $gray-darker;
+    font-size: 22px;
+
+    &:hover {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+
+  date {
+    @include lato-light;
+    background-color: $gray-darkest;
+    color: $white;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  plus {
+    @include raleway-black;
+    color: $blue;
+    font-size: 30px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+}
+
+.accordion-inner {
+  h4 {
+    @include lato-light;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 25px;
+  }
+}
+
+#collapseThree {
+  ol {
+    li {
+      text-align: left;
+    }
+  }
+}
