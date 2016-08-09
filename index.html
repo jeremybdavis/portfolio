@@ -76,11 +76,9 @@
 		<div class="col-lg-8 col-lg-offset-2">
 			<h3>About Jeremy Davis</h3>
 			<h5>FRONT-END DEVELOPER</h5>
-			<hr>
-			<br>
       <img src="assets/img/about-me.jpg" class="img-responsive" alt="" />
-			<h4>Hi, I'm Jeremy. I'm a front-end developer. I love to find creative solutions to solve problems and help others. People, travel, creativity, and good stories tend to light me up. Nashville, TN is home.<br/>-</h4>
-			<p>In the summer of 2015, I attended an accelerated coding program called The Iron Yard. While there I began to learn how to truly think like a programmer. I began to embrace the idea of signing up for a lifelong pursuit of learning. I learned and got my hands dirty with HTML, CSS, and lots and lots of Javascript. My time there confirmed every day that this is what I want to be doing for a living. You can see some of the work I completed while there in my portfolio below.</p>
+			<p class="intro-content">Hi, I'm Jeremy. I'm a front-end developer. I love to find creative solutions to solve problems and help others. People, travel, creativity, and good stories tend to light me up. Nashville, TN is home.</p>
+			<p>In the summer of 2015, I attended an accelerated coding program called The Iron Yard. While there I began to learn how to truly think like a programmer. I began to embrace the idea of signing up for a lifelong pursuit of learning. I learned and got my hands dirty with HTML, CSS, and a whole lot of Javascript. I then spent 9 months working for a small agency in town helping turn designs into fully functional, responsive websites and applications. You can see some of my recent work in my <a href="#portfolio">portfolio</a> below.</p>
       <p>In my spare time, you can typically find me getting things done at my favorite coffee shop, yelling at the TV while watching sports, or catching one of the many shows Nashville has to offer.</p>
       <p>I'm currently in search of opportunities to continue my journey as a developer. I'm ready and eager for a position to learn and apply myself to a team. If there is any way I can help you, or you would like to know more, feel free to <a href="#contact">contact me</a> anytime.</p>
 		</div><!-- /col-lg-6 -->
@@ -102,11 +100,11 @@
 					<script>
 						var doughnutData = [
 								{
-									value: 60,
+									value: 80,
 									color:"#ab6c60"
 								},
 								{
-									value : 40,
+									value : 20,
 									color : "#ecf0f1"
 								}
 							];
@@ -147,11 +145,11 @@
 					<script>
 						var doughnutData = [
 								{
-									value: 50,
+									value: 60,
 									color:"#6e8b94"
 								},
 								{
-									value : 50,
+									value : 40,
 									color : "#ecf0f1"
 								}
 							];
@@ -174,7 +172,86 @@
 			<div class="row">
 
         <!-- PORTFOLIO IMAGE 1 -->
-        <div class="col-md-4">
+        <div class="col-md-6">
+          <div class="grid mask">
+            <figure>
+              <a href="http://makebelieve.com" title="Make Believe Website">
+                <img class="img-responsive" src="assets/img/portfolio/armedmind.png" alt="Armed Mind">
+              </a>
+              <figcaption>
+                <h5>Armed Mind</h5>
+                <a data-toggle="modal" href="#myModal5" class="btn btn-primary btn-lg">Take a Look</a>
+              </figcaption><!-- /figcaption -->
+            </figure><!-- /figure -->
+          </div><!-- /grid-mask -->
+          <br>
+        </div><!-- /col -->
+
+        <!-- MODAL 1 -->
+
+        <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Armed Mind</h4>
+              </div>
+              <div class="modal-body">
+                <p><img class="img-responsive" src="assets/img/portfolio/armedmind.png" alt=""></p>
+                <p>My most recent project I worked on with Louder Agency. Armed Mind is a creative agency that partnered with Louder to revamp their website and case studies. This project gave me an opportunity to experiment with some fun "bells and whistles" such as animations, video, and some fun plugins.</p>
+                <p><b><a href="http://makebelieve.com">Visit Site</a></b></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+				<!-- PORTFOLIO IMAGE 2 -->
+				<div class="col-md-6">
+		    	<div class="grid mask">
+  					<figure>
+  						<a href="http://insurancespecialtygroup.com" title="ISG Website">
+                <img class="img-responsive" src="assets/img/portfolio/isg.png" alt="Insurance Specialty Group Website">
+              </a>
+  						<figcaption>
+  							<h5>ISG</h5>
+  							<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
+  						</figcaption><!-- /figcaption -->
+  					</figure><!-- /figure -->
+		    	</div><!-- /grid-mask -->
+            <h7>TESTING</h7>
+			    	<br>
+				</div><!-- /col -->
+
+
+			 <!-- MODAL 2 -->
+
+			  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			    <div class="modal-dialog">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			          <h4 class="modal-title">Insurance Specialty Group</h4>
+			        </div>
+			        <div class="modal-body">
+			          <p><img class="img-responsive" src="assets/img/portfolio/isg.png" alt="ISG Website"></p>
+			          <p>My first custom dev website with Louder Agency. I was provided prototypes for the site that I then helped build into a website our client could show off proudly. This was also my first wordpress development experience.</p>
+			          <p><b><a href="http://insurancespecialtygroup.com">Visit Site</a></b></p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        </div>
+			      </div><!-- /.modal-content -->
+			    </div><!-- /.modal-dialog -->
+			  </div><!-- /.modal -->
+      </div><!-- /row -->
+
+
+				<!-- PORTFOLIO IMAGE 3 -->
+      <div class="row">
+        <div class="col-md-6">
             <div class="grid mask">
             <figure>
               <a href="http://jeremybdavis.github.io/final-project/"><img class="img-responsive" src="assets/img/portfolio/coffeeApp.png" alt=""></a>
@@ -187,7 +264,7 @@
             <br>
         </div><!-- /col -->
 
-        <!-- MODAL 1 -->
+        <!-- MODAL 3 -->
 
         <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
@@ -208,8 +285,9 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4 ">
+
+				<!-- PORTFOLIO IMAGE 4 -->
+        <div class="col-md-6">
 			    	<div class="grid mask">
 						<figure>
 							<a href="http://jeremybdavis.github.io/surf_paddle/"><img class="img-responsive" src="assets/img/portfolio/surf.png" alt=""></a>
@@ -224,93 +302,19 @@
 				</div><!-- /col -->
 
 
-						 <!-- MODAL 2 -->
-
-						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Surf & Paddle Co.</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="assets/img/portfolio/surf.png" alt=""></p>
-						          <p>My first project at The Iron Yard. We were given a PDF mockup of this site and then set out to recreate it as closely as possible using pure HTML and CSS. I have since gone back and made it fully responsive.</p>
-						          <p><b><a href="http://jeremybdavis.github.io/surf_paddle/">Visit Site</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-
-
-				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<a href="http://jeremybdavis.github.io/Assignment11.1/"><img class="img-responsive" src="assets/img/portfolio/etsy.png" alt=""></a>
-							<figcaption>
-								<h5>ETSY PROJECT</h5>
-								<a data-toggle="modal" href="#myModal2" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-			    	<br>
-				</div><!-- /col -->
-
-        <!-- MODAL 3 -->
-
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Etsy API Project</h4>
-              </div>
-              <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/portfolio/etsy.png" alt=""></p>
-                <p>This project was our first big test at pulling information from an API to populate our page. This was also my first attempt at using the Bourbon Neat library.</p>
-                <p><b><a href="http://jeremybdavis.github.io/Assignment11.1/">Visit Site</a></b></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-      </div><!-- /row -->
-
-				<!-- PORTFOLIO IMAGE 4 -->
-      <div class="row">
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<a href="http://jeremybdavis.github.io/ajax_assignment08/"><img class="img-responsive" src="assets/img/portfolio/repo.png" alt=""></a>
-							<figcaption>
-								<h5>GITHUB REPO COPY</h5>
-								<a data-toggle="modal" href="#myModal3" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-			    	<br>
-				</div><!-- /col -->
-
-
       <!-- MODAL 4 -->
 
-      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title">Github Repo Copy</h4>
+              <h4 class="modal-title">Surf & Paddle Co.</h4>
             </div>
             <div class="modal-body">
-              <p><img class="img-responsive" src="assets/img/portfolio/repo.png" alt=""></p>
-              <p>Our first attempt at communicating with an API to populate our page's content. Used Github's API to recreate our own repo pages.</p>
-              <p><b><a href="http://jeremybdavis.github.io/Assignment11.1/">Visit Site</a></b></p>
+              <p><img class="img-responsive" src="assets/img/portfolio/surf.png" alt=""></p>
+              <p>My first project at The Iron Yard. We were given a PDF mockup of this site and then set out to recreate it as closely as possible using pure HTML and CSS. I have since gone back and made it fully responsive.</p>
+              <p><b><a href="http://jeremybdavis.github.io/surf_paddle/">Visit Site</a></b></p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -318,56 +322,9 @@
           </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
       </div><!-- /.modal -->
+    </div><!-- /row -->
+		<br>
 
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<a href="http://jeremybdavis.github.io/Space-Invaders-Demo/"><img class="img-responsive" src="assets/img/portfolio/space.jpg" alt=""></a>
-							<figcaption>
-								<h5>SPACE INVADERS</h5>
-								<a data-toggle="modal" href="#myModal4" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-			    	<br>
-				</div><!-- /col -->
-
-        <!-- MODAL 5 -->
-
-        <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">Space Invaders Demo</h4>
-              </div>
-              <div class="modal-body">
-                <p><img class="img-responsive" src="assets/img/portfolio/space.jpg" alt=""></p>
-                <p>A fun project coding along to <a href="https://vimeo.com/105955605">this video</a>. </p>
-                <p><b><a href="http://jeremybdavis.github.io/Space-Invaders-Demo/">Visit Site</a></b></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
-				<!-- PORTFOLIO IMAGE 6 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<a href="http://www.jeremydavis.co"><img class="img-responsive" src="assets/img/portfolio/mysite.jpg" alt=""></a>
-							<figcaption>
-								<h5>SQUARESPACE</h5>
-								<a data-toggle="modal" href="#myModal6" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				<br>
-			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /foliowrap -->
 

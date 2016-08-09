@@ -52,11 +52,11 @@
 
 .mask {
   figcaption {
-    @include vendor-prefix(transform, (translateY(100%)));
-    @include vendor-prefix(transition, (transform .4s, opacity .1s .3s));
+    @include vendor-prefix(transform, (translateY(0)));
+    @include vendor-prefix(transition, (transform .4s, opacity .1s));
     bottom: 0;
     height: 50px;
-    opacity: 0;
+    opacity: 1;
     top: auto;
     width: 100%;
 
@@ -73,18 +73,27 @@
 
     img {
       @include vendor-prefix(transition, (transform .4s));
+      width: 100%;
     }
   }
 
-  figure:hover {
+  @media (min-width: 768px) {
     figcaption {
-      @include vendor-prefix(transform, (translateY(0)));
-      @include vendor-prefix(transition, (transform .4s, opacity .1s));
-      opacity: 1;
+      @include vendor-prefix(transform, (translateY(100%)));
+      @include vendor-prefix(transition, (transform .4s, opacity .1s .3s));
+      opacity: 0;
     }
 
-    img {
-      @include vendor-prefix(transform, (translateY(-30px)));
+    figure:hover {
+      figcaption {
+        @include vendor-prefix(transform, (translateY(0)));
+        @include vendor-prefix(transition, (transform .4s, opacity .1s));
+        opacity: 1;
+      }
+
+      img {
+        @include vendor-prefix(transform, (translateY(-30px)));
+      }
     }
   }
 }

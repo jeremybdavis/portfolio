@@ -11,7 +11,7 @@ $white: #fff;
 
 // borders
 @mixin white-border($opacity) {
-  border-color: rgba(255, 255, 255, $opacity);
+  border-color: rgba(255, 255, 255, $opacity) !important;
 }
 
 // fonts
